@@ -34,9 +34,9 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  small: /favicon-16x16.png
+  medium: /favicon-32x32.png
+  apple_touch_icon: /apple-touch-icon.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -336,13 +336,13 @@ text_align:
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#222"
 
 # Custom Logo (Do not support scheme Mist)
-custom_logo: #/uploads/custom-logo.jpg
+custom_logo: /uploads/custom-logo.png
 
 codeblock:
   # Code Highlight theme
@@ -356,28 +356,28 @@ codeblock:
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
     style:
 
 back2top:
-  enable: true
+  enable: true # 開啟 back to top 按鈕
   # Back to top in sidebar.
-  sidebar: false
+  sidebar: true # true 表示在側邊欄顯示，false則在側下角
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true # 開啟進度百分比
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true # 開啟進度條
   # Available values: top | bottom
-  position: top
-  color: "#37c6c0"
-  height: 3px
+  position: bottom # 設置位置 可以為  top | bottom
+  color: "#0684BD" # 進度條顏色 16進制RGB
+  height: 3px # 高度
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -387,7 +387,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink: https://github.com/gavinh0731
   title: Follow me on GitHub
 
 
